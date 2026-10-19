@@ -50,7 +50,6 @@ class SiteTests(unittest.TestCase):
             self.assertTrue((ROOT / asset).is_file())
         for item in self.data['resources']:
             self.assertIn(item['url'], page.links)
-        self.assertIn('https://kobong8.github.io/introduction-to-opencode/', page.links)
 
     def test_content_is_escaped_and_bad_links_rejected(self):
         data = copy.deepcopy(self.data)
@@ -77,9 +76,9 @@ class SiteTests(unittest.TestCase):
         self.assertIn('data-category="새 분류"', html)
         self.assertIn('<option value="새 주제">새 주제</option>', html)
         self.assertIn('title-new-course', html)
-        self.assertIn('전체 4개 자료', html)
+        self.assertIn(f'전체 {len(data["resources"])}개 자료', html)
         self.assertNotIn('강의 정리', html)
-        self.assertIn('data-category="발표 정리"', html)
+        self.assertIn('data-category="학회·포럼 정리"', html)
 
     def test_library_dates_and_topics_are_validated(self):
         for field, invalid in [('addedAt', 'not-a-date'), ('updatedAt', '2026-99-99'), ('topics', [])]:

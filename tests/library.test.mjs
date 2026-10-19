@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import { selectResources, normalize } from '../assets/library-core.mjs';
 const items = [
   {id:'one',title:'Docker 2',type:'강의 자료',description:'컨테이너 기초',tags:['Volume'],topics:['DevOps'],addedAt:'2026-10-01',updatedAt:'2026-10-19'},
-  {id:'two',title:'Docker 10',type:'튜토리얼',description:'실습',tags:['Docker'],topics:['DevOps'],addedAt:'2026-10-18',updatedAt:null},
-  {id:'three',title:'AI Guide',type:'발표 정리',description:'활용',tags:['Agent'],topics:['AI'],addedAt:'2026-10-10',updatedAt:null},
+  {id:'two',title:'Docker 10',type:'실습 자료',description:'실습',tags:['Docker'],topics:['DevOps'],addedAt:'2026-10-18',updatedAt:null},
+  {id:'three',title:'AI Guide',type:'학회·포럼 정리',description:'활용',tags:['Agent'],topics:['AI'],addedAt:'2026-10-10',updatedAt:null},
 ];
 test('여러 단어 AND 검색과 분류/주제 교집합', () => {
   assert.equal(selectResources(items,{query:' Docker  VOLUME ',category:'강의 자료',topic:'DevOps'})[0].id,'one');

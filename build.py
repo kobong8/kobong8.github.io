@@ -47,7 +47,7 @@ def render(data):
           <p class="card-description">{text(item['description'])}</p><ul class="tags" aria-label="주제">{tags}</ul>
           <p class="resource-date">{date_label} <time datetime="{text(shown_date)}">{text(shown_date.replace('-', '.'))}</time></p>
           <div class="card-bottom"><a class="card-action" href="{link(item['url'])}" aria-label="{text(item['title'])} {text(item['action'])}">{text(item['action'])}<span aria-hidden="true">↗</span></a>
-          <a class="source-link" href="{link(item['repository'])}">{text(item['title'])} 저장소</a></div></article>''')
+          </div></article>''')
     updates = []
     for item in sorted(data['updates'], key=lambda row: row['date'], reverse=True):
         date.fromisoformat(item['date'])
