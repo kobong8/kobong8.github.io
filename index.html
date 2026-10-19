@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DevOps와 AI 도구를 배우고, 직접 써보고, 기록하는 Kobong의 자료 모음입니다.">
+  <meta name="theme-color" content="#111a30">
+  <meta property="og:title" content="Kobong · 배우고, 써보고, 기록하기">
+  <meta property="og:description" content="DevOps와 AI 도구를 배우고, 직접 써보고, 기록하는 Kobong의 자료 모음입니다.">
+  <meta property="og:type" content="website">
+  <title>Kobong · 배우고, 써보고, 기록하기</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="module" src="./assets/library.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <div class="header-inner"><a class="brand" href="#main" aria-label="Kobong 처음으로"><span class="brand-mark" aria-hidden="true">k.</span>Kobong<span class="brand-dot" aria-hidden="true">/</span></a>
+      <nav aria-label="주 메뉴"><a href="#library">자료 서재</a><a href="#updates">최근 기록</a><a href="#about">소개</a><a class="github-nav" href="https://github.com/kobong8">GitHub <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">KOBONG / KNOWLEDGE NOTES</p><h1 id="hero-title">배운 것을 정리하고,<br>직접 써보는 공간.</h1><p class="hero-description">DevOps와 AI 도구에 관한 강의 자료, 튜토리얼, 발표 정리를 공유합니다. 지금 필요한 주제부터 살펴보세요.</p><div class="hero-actions"><a class="button primary" href="#library">자료 둘러보기 <span aria-hidden="true">↓</span></a><a class="text-link" href="#about">이 공간에 대해 <span aria-hidden="true">↗</span></a></div><p class="hero-note"><span aria-hidden="true"></span>개념에서 실습으로, 실습에서 다음 질문으로.</p></div>
+      <div class="field-notes" aria-label="이 공간의 세 가지 읽는 방법"><div class="note-top"><span>THE KNOWLEDGE MAP</span><span aria-hidden="true">✳</span></div><p class="note-title">각자의 속도로,<br>필요한 깊이만큼.</p><div class="note-paths"><div><span class="path-number">01</span><p><strong>배우기</strong><small>개념을 연결하는 강의</small></p><span class="path-label">LEARN</span></div><div><span class="path-number">02</span><p><strong>해보기</strong><small>직접 따라 하는 튜토리얼</small></p><span class="path-label">TRY</span></div><div><span class="path-number">03</span><p><strong>넓히기</strong><small>새로운 흐름을 읽는 기록</small></p><span class="path-label">EXPLORE</span></div></div><div class="note-bottom"><span>KOBONG FIELD NOTES</span><span aria-hidden="true">↗</span></div></div>
+    </section>
+    <section id="library" class="library wrap" aria-labelledby="library-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE LIBRARY</p><h2 id="library-title">필요할 때 꺼내 보는 자료 서재</h2></div><p>강의부터 실습, 핵심 정리까지.</p></div>
+      <div class="library-controls" hidden>
+        <div class="library-search-row"><label class="library-search" for="library-query"><span>자료 찾기</span><input id="library-query" type="search" placeholder="제목이나 태그를 입력하세요. 예: Docker, AI" maxlength="200" autocomplete="off" aria-controls="resource-grid"></label><button class="library-reset" type="button" data-reset>초기화</button></div>
+        <div class="library-categories" role="group" aria-label="자료 분류"><button type="button" data-category="" aria-pressed="true">전체 <span>3</span></button><button type="button" data-category="강의 자료" aria-pressed="false">강의 자료 <span>1</span></button><button type="button" data-category="튜토리얼" aria-pressed="false">튜토리얼 <span>1</span></button><button type="button" data-category="발표 정리" aria-pressed="false">발표 정리 <span>1</span></button></div>
+        <div class="library-options"><label for="library-topic">주제<select id="library-topic" aria-controls="resource-grid"><option value="">전체 주제</option><option value="AI">AI</option><option value="DevOps">DevOps</option></select></label><label for="library-sort">정렬<select id="library-sort" aria-controls="resource-grid"><option value="added">최근 등록순</option><option value="updated">최근 업데이트순</option><option value="title">제목순</option></select></label><span class="library-help">제목·설명·태그에서 찾습니다.</span></div>
+      </div>
+      <div class="library-results-bar"><p id="library-status" role="status" aria-live="polite" aria-atomic="true">전체 3개 자료</p><span>한 카드에 하나의 자료 모음</span></div>
+      <div class="resource-grid" id="resource-grid"><article class="resource blue" data-resource="{&quot;id&quot;: &quot;devops&quot;, &quot;type&quot;: &quot;강의 자료&quot;, &quot;title&quot;: &quot;DevOps Lecture&quot;, &quot;description&quot;: &quot;개발부터 배포와 운영까지. 도구의 개념을 이해하고, 하나의 흐름으로 연결하는 강의입니다.&quot;, &quot;tags&quot;: [&quot;Linux &amp; Git&quot;, &quot;Docker&quot;, &quot;Kubernetes&quot;, &quot;CI/CD&quot;], &quot;topics&quot;: [&quot;DevOps&quot;], &quot;addedAt&quot;: &quot;2026-10-18&quot;, &quot;updatedAt&quot;: null}" aria-labelledby="title-devops">
+          <div class="card-top"><span>강의 자료</span><span class="resource-number">DevOps</span></div>
+          <h3 id="title-devops">DevOps Lecture</h3>
+          <p class="card-description">개발부터 배포와 운영까지. 도구의 개념을 이해하고, 하나의 흐름으로 연결하는 강의입니다.</p><ul class="tags" aria-label="주제"><li>Linux &amp; Git</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li></ul>
+          <p class="resource-date">등록 <time datetime="2026-10-18">2026.10.18</time></p>
+          <div class="card-bottom"><a class="card-action" href="https://kobong8.github.io/lecture-devops/" aria-label="DevOps Lecture 강의 보기">강의 보기<span aria-hidden="true">↗</span></a>
+          <a class="source-link" href="https://github.com/kobong8/lecture-devops">DevOps Lecture 저장소</a></div></article>
+<article class="resource teal" data-resource="{&quot;id&quot;: &quot;opencode&quot;, &quot;type&quot;: &quot;튜토리얼&quot;, &quot;title&quot;: &quot;OpenCode Playbook&quot;, &quot;description&quot;: &quot;작업을 계획하고, AI와 함께 실행하고, 결과를 검증하는 방법. 팀에서 활용할 수 있는 가이드입니다.&quot;, &quot;tags&quot;: [&quot;AI Coding&quot;, &quot;Prompt&quot;, &quot;Workflow&quot;], &quot;topics&quot;: [&quot;AI&quot;], &quot;addedAt&quot;: &quot;2026-10-18&quot;, &quot;updatedAt&quot;: null}" aria-labelledby="title-opencode">
+          <div class="card-top"><span>튜토리얼</span><span class="resource-number">AI</span></div>
+          <h3 id="title-opencode">OpenCode Playbook</h3>
+          <p class="card-description">작업을 계획하고, AI와 함께 실행하고, 결과를 검증하는 방법. 팀에서 활용할 수 있는 가이드입니다.</p><ul class="tags" aria-label="주제"><li>AI Coding</li><li>Prompt</li><li>Workflow</li></ul>
+          <p class="resource-date">등록 <time datetime="2026-10-18">2026.10.18</time></p>
+          <div class="card-bottom"><a class="card-action" href="https://kobong8.github.io/introduction-to-opencode/" aria-label="OpenCode Playbook 따라 하기">따라 하기<span aria-hidden="true">↗</span></a>
+          <a class="source-link" href="https://github.com/kobong8/introduction-to-opencode">OpenCode Playbook 저장소</a></div></article>
+<article class="resource violet" data-resource="{&quot;id&quot;: &quot;saif&quot;, &quot;type&quot;: &quot;발표 정리&quot;, &quot;title&quot;: &quot;SAIF 2026&quot;, &quot;description&quot;: &quot;AI 기술은 어디로 향하고, 산업에서는 어떻게 쓰일까요? 핵심 내용을 두 가지 관점으로 정리했습니다.&quot;, &quot;tags&quot;: [&quot;AI Technology&quot;, &quot;AX Innovation&quot;], &quot;topics&quot;: [&quot;AI&quot;], &quot;addedAt&quot;: &quot;2026-10-18&quot;, &quot;updatedAt&quot;: null}" aria-labelledby="title-saif">
+          <div class="card-top"><span>발표 정리</span><span class="resource-number">AI</span></div>
+          <h3 id="title-saif">SAIF 2026</h3>
+          <p class="card-description">AI 기술은 어디로 향하고, 산업에서는 어떻게 쓰일까요? 핵심 내용을 두 가지 관점으로 정리했습니다.</p><ul class="tags" aria-label="주제"><li>AI Technology</li><li>AX Innovation</li></ul>
+          <p class="resource-date">등록 <time datetime="2026-10-18">2026.10.18</time></p>
+          <div class="card-bottom"><a class="card-action" href="https://kobong8.github.io/SAIF-2026/" aria-label="SAIF 2026 자료 보기">자료 보기<span aria-hidden="true">↗</span></a>
+          <a class="source-link" href="https://github.com/kobong8/SAIF-2026">SAIF 2026 저장소</a></div></article></div>
+      <div class="library-empty" hidden><span aria-hidden="true">⌕</span><h3>조건에 맞는 자료가 없습니다.</h3><p>다른 검색어를 입력하거나 분류·주제 조건을 바꿔보세요.</p><button type="button" data-reset>전체 자료 보기</button></div>
+      <noscript><p class="library-noscript">모든 자료를 표시하고 있습니다. 검색과 필터는 JavaScript를 켜면 사용할 수 있습니다.</p></noscript>
+      <aside class="tool"><div class="tool-icon" aria-hidden="true">&lt;/&gt;</div><div><p class="eyebrow">BEHIND THE PAGES</p><h3>Kobong Site Template</h3><p>이 자료들의 공통 디자인을 바탕으로 만든 강의·튜토리얼 템플릿입니다.</p></div><a class="text-link" href="https://github.com/kobong8/kobong-site-template">템플릿 저장소 <span aria-hidden="true">↗</span></a></aside>
+    </section>
+    <section id="updates" class="updates wrap" aria-labelledby="updates-title"><div class="updates-heading"><p class="eyebrow">02 / CHANGELOG</p><h2 id="updates-title">조금씩 쌓이는 기록</h2><p>자료를 만들고 다듬은 과정을 남깁니다.</p></div><ol class="update-list"><li><div class="update-meta"><time datetime="2026-10-18">2026.10.18</time><span>KOBONG</span></div><a href="#library"><h3>자료를 한곳에서 찾아볼 수 있도록</h3><span aria-hidden="true">↗</span></a><p>강의 자료·튜토리얼·발표 정리의 출발점을 하나로 모았습니다.</p></li>
+<li><div class="update-meta"><time datetime="2026-10-18">2026.10.18</time><span>DEVOPS</span></div><a href="https://github.com/kobong8/lecture-devops"><h3>찾고, 돌아오고, 공유하기</h3><span aria-hidden="true">↗</span></a><p>강의 자료 검색, 검색 전 강의 위치로 복귀, 슬라이드 링크 복사 기능을 추가했습니다.</p></li>
+<li><div class="update-meta"><time datetime="2026-10-18">2026.10.18</time><span>TEMPLATE</span></div><a href="https://github.com/kobong8/kobong-site-template"><h3>강의와 튜토리얼에 맞는 두 가지 화면</h3><span aria-hidden="true">↗</span></a><p>SAIF 디자인을 바탕으로 재사용할 수 있는 사이트 템플릿을 만들었습니다.</p></li></ol></section>
+    <section id="about" class="about-section" aria-labelledby="about-title"><div class="about wrap"><div class="about-heading"><p class="eyebrow">03 / ABOUT</p><div class="monogram" aria-hidden="true">k<span>.</span></div><span class="about-signature">LEARN. TRY. WRITE.</span></div><div class="about-copy"><h2 id="about-title">안녕하세요, Kobong입니다.</h2><p>DevOps와 AI 도구를 주제로 강의와 활용 가이드를 정리하고 있습니다.</p><p>이곳에는 개념을 설명하는 강의 자료, 직접 따라 할 수 있는 튜토리얼, 발표의 핵심을 정리한 내용을 모았습니다. 필요한 순간에 다시 꺼내 보고, 다음 작업에 연결할 수 있는 자료를 만들고자 합니다.</p><ul class="interest-list" aria-label="관심 주제"><li>DevOps</li><li>AI 도구</li><li>기술 공유</li></ul><a class="text-link" href="https://github.com/kobong8">GitHub에서 더 살펴보기 <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#main">Kobong<span class="brand-dot" aria-hidden="true">/</span></a><p>배우고, 써보고, 기록하기.</p><a href="#main">맨 위로 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

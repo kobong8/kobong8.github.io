@@ -1,0 +1,115 @@
+{
+  "name": "Kobong",
+  "description": "DevOps와 AI 도구를 배우고, 직접 써보고, 기록하는 Kobong의 자료 모음입니다.",
+  "hero": {
+    "eyebrow": "KOBONG / KNOWLEDGE NOTES",
+    "title": [
+      "배운 것을 정리하고,",
+      "직접 써보는 공간."
+    ],
+    "text": "DevOps와 AI 도구에 관한 강의 자료, 튜토리얼, 발표 정리를 공유합니다. 지금 필요한 주제부터 살펴보세요."
+  },
+  "github": "https://github.com/kobong8",
+  "resources": [
+    {
+      "id": "devops",
+      "type": "강의 자료",
+      "title": "DevOps Lecture",
+      "description": "개발부터 배포와 운영까지. 도구의 개념을 이해하고, 하나의 흐름으로 연결하는 강의입니다.",
+      "tags": [
+        "Linux & Git",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "action": "강의 보기",
+      "url": "https://kobong8.github.io/lecture-devops/",
+      "repository": "https://github.com/kobong8/lecture-devops",
+      "theme": "blue",
+      "addedAt": "2026-10-18",
+      "updatedAt": null,
+      "topics": [
+        "DevOps"
+      ]
+    },
+    {
+      "id": "opencode",
+      "type": "튜토리얼",
+      "title": "OpenCode Playbook",
+      "description": "작업을 계획하고, AI와 함께 실행하고, 결과를 검증하는 방법. 팀에서 활용할 수 있는 가이드입니다.",
+      "tags": [
+        "AI Coding",
+        "Prompt",
+        "Workflow"
+      ],
+      "action": "따라 하기",
+      "url": "https://kobong8.github.io/introduction-to-opencode/",
+      "repository": "https://github.com/kobong8/introduction-to-opencode",
+      "theme": "teal",
+      "addedAt": "2026-10-18",
+      "updatedAt": null,
+      "topics": [
+        "AI"
+      ]
+    },
+    {
+      "id": "saif",
+      "type": "발표 정리",
+      "title": "SAIF 2026",
+      "description": "AI 기술은 어디로 향하고, 산업에서는 어떻게 쓰일까요? 핵심 내용을 두 가지 관점으로 정리했습니다.",
+      "tags": [
+        "AI Technology",
+        "AX Innovation"
+      ],
+      "action": "자료 보기",
+      "url": "https://kobong8.github.io/SAIF-2026/",
+      "repository": "https://github.com/kobong8/SAIF-2026",
+      "theme": "violet",
+      "addedAt": "2026-10-18",
+      "updatedAt": null,
+      "topics": [
+        "AI"
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-10-18",
+      "label": "KOBONG",
+      "title": "자료를 한곳에서 찾아볼 수 있도록",
+      "text": "강의 자료·튜토리얼·발표 정리의 출발점을 하나로 모았습니다.",
+      "url": "#library"
+    },
+    {
+      "date": "2026-10-18",
+      "label": "DEVOPS",
+      "title": "찾고, 돌아오고, 공유하기",
+      "text": "강의 자료 검색, 검색 전 강의 위치로 복귀, 슬라이드 링크 복사 기능을 추가했습니다.",
+      "url": "https://github.com/kobong8/lecture-devops"
+    },
+    {
+      "date": "2026-10-18",
+      "label": "TEMPLATE",
+      "title": "강의와 튜토리얼에 맞는 두 가지 화면",
+      "text": "SAIF 디자인을 바탕으로 재사용할 수 있는 사이트 템플릿을 만들었습니다.",
+      "url": "https://github.com/kobong8/kobong-site-template"
+    }
+  ],
+  "about": {
+    "title": "안녕하세요, Kobong입니다.",
+    "paragraphs": [
+      "DevOps와 AI 도구를 주제로 강의와 활용 가이드를 정리하고 있습니다.",
+      "이곳에는 개념을 설명하는 강의 자료, 직접 따라 할 수 있는 튜토리얼, 발표의 핵심을 정리한 내용을 모았습니다. 필요한 순간에 다시 꺼내 보고, 다음 작업에 연결할 수 있는 자료를 만들고자 합니다."
+    ],
+    "interests": [
+      "DevOps",
+      "AI 도구",
+      "기술 공유"
+    ]
+  },
+  "tool": {
+    "title": "Kobong Site Template",
+    "text": "이 자료들의 공통 디자인을 바탕으로 만든 강의·튜토리얼 템플릿입니다.",
+    "url": "https://github.com/kobong8/kobong-site-template"
+  }
+}
