@@ -48,6 +48,26 @@
       "topics": [
         "AI"
       ]
+    },
+    {
+      "id": "opencode",
+      "type": "강의 자료",
+      "title": "OpenCode 활용 가이드",
+      "description": "OpenCode를 처음 쓰는 분을 위한 가이드입니다. 모의 터미널에서 명령 팔레트를 열어 보고, 할 일 목록 예제로 요청 작성과 결과 검증을 익힙니다.",
+      "tags": [
+        "OpenCode",
+        "AI 코딩",
+        "TUI",
+        "프롬프트"
+      ],
+      "action": "가이드 보기",
+      "url": "https://kobong8.github.io/introduction-to-opencode/",
+      "theme": "teal",
+      "addedAt": "2026-11-19",
+      "updatedAt": null,
+      "topics": [
+        "AI"
+      ]
     }
   ],
   "updates": [

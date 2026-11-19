@@ -31,10 +31,10 @@
       <div class="section-heading"><div><p class="eyebrow">01 / THE LIBRARY</p><h2 id="library-title">필요할 때 꺼내 보는 자료 서재</h2></div><p>강의부터 실습, 핵심 정리까지.</p></div>
       <div class="library-controls" hidden>
         <div class="library-search-row"><label class="library-search" for="library-query"><span>자료 찾기</span><input id="library-query" type="search" placeholder="제목이나 태그를 입력하세요. 예: Docker, AI" maxlength="200" autocomplete="off" aria-controls="resource-grid"></label><button class="library-reset" type="button" data-reset>초기화</button></div>
-        <div class="library-categories" role="group" aria-label="자료 분류"><button type="button" data-category="" aria-pressed="true">전체 <span>2</span></button><button type="button" data-category="강의 자료" aria-pressed="false">강의 자료 <span>1</span></button><button type="button" data-category="학회·포럼 정리" aria-pressed="false">학회·포럼 정리 <span>1</span></button></div>
+        <div class="library-categories" role="group" aria-label="자료 분류"><button type="button" data-category="" aria-pressed="true">전체 <span>3</span></button><button type="button" data-category="강의 자료" aria-pressed="false">강의 자료 <span>2</span></button><button type="button" data-category="학회·포럼 정리" aria-pressed="false">학회·포럼 정리 <span>1</span></button></div>
         <div class="library-options"><label for="library-topic">주제<select id="library-topic" aria-controls="resource-grid"><option value="">전체 주제</option><option value="AI">AI</option><option value="DevOps">DevOps</option></select></label><label for="library-sort">정렬<select id="library-sort" aria-controls="resource-grid"><option value="added">최근 등록순</option><option value="updated">최근 업데이트순</option><option value="title">제목순</option></select></label><span class="library-help">제목·설명·태그에서 찾습니다.</span></div>
       </div>
-      <div class="library-results-bar"><p id="library-status" role="status" aria-live="polite" aria-atomic="true">전체 2개 자료</p><span>한 카드에 하나의 자료 모음</span></div>
+      <div class="library-results-bar"><p id="library-status" role="status" aria-live="polite" aria-atomic="true">전체 3개 자료</p><span>한 카드에 하나의 자료 모음</span></div>
       <div class="resource-grid" id="resource-grid"><article class="resource blue" data-resource="{&quot;id&quot;: &quot;devops&quot;, &quot;type&quot;: &quot;강의 자료&quot;, &quot;title&quot;: &quot;DevOps Lecture&quot;, &quot;description&quot;: &quot;개발부터 배포와 운영까지. 도구의 개념을 이해하고, 하나의 흐름으로 연결하는 강의입니다.&quot;, &quot;tags&quot;: [&quot;Linux &amp; Git&quot;, &quot;Docker&quot;, &quot;Kubernetes&quot;, &quot;CI/CD&quot;], &quot;topics&quot;: [&quot;DevOps&quot;], &quot;addedAt&quot;: &quot;2026-10-18&quot;, &quot;updatedAt&quot;: null}" aria-labelledby="title-devops">
           <div class="card-top"><span>강의 자료</span><span class="resource-number">DevOps</span></div>
           <h3 id="title-devops">DevOps Lecture</h3>
@@ -48,6 +48,13 @@
           <p class="card-description">AI 기술은 어디로 향하고, 산업에서는 어떻게 쓰일까요? 핵심 내용을 두 가지 관점으로 정리했습니다.</p><ul class="tags" aria-label="주제"><li>AI Technology</li><li>AX Innovation</li></ul>
           <p class="resource-date">등록 <time datetime="2026-10-18">2026.10.18</time></p>
           <div class="card-bottom"><a class="card-action" href="https://kobong8.github.io/SAIF-2026/" aria-label="SAIF 2026 자료 보기">자료 보기<span aria-hidden="true">↗</span></a>
+          </div></article>
+<article class="resource teal" data-resource="{&quot;id&quot;: &quot;opencode&quot;, &quot;type&quot;: &quot;강의 자료&quot;, &quot;title&quot;: &quot;OpenCode 활용 가이드&quot;, &quot;description&quot;: &quot;OpenCode를 처음 쓰는 분을 위한 가이드입니다. 모의 터미널에서 명령 팔레트를 열어 보고, 할 일 목록 예제로 요청 작성과 결과 검증을 익힙니다.&quot;, &quot;tags&quot;: [&quot;OpenCode&quot;, &quot;AI 코딩&quot;, &quot;TUI&quot;, &quot;프롬프트&quot;], &quot;topics&quot;: [&quot;AI&quot;], &quot;addedAt&quot;: &quot;2026-11-19&quot;, &quot;updatedAt&quot;: null}" aria-labelledby="title-opencode">
+          <div class="card-top"><span>강의 자료</span><span class="resource-number">AI</span></div>
+          <h3 id="title-opencode">OpenCode 활용 가이드</h3>
+          <p class="card-description">OpenCode를 처음 쓰는 분을 위한 가이드입니다. 모의 터미널에서 명령 팔레트를 열어 보고, 할 일 목록 예제로 요청 작성과 결과 검증을 익힙니다.</p><ul class="tags" aria-label="주제"><li>OpenCode</li><li>AI 코딩</li><li>TUI</li><li>프롬프트</li></ul>
+          <p class="resource-date">등록 <time datetime="2026-11-19">2026.11.19</time></p>
+          <div class="card-bottom"><a class="card-action" href="https://kobong8.github.io/introduction-to-opencode/" aria-label="OpenCode 활용 가이드 가이드 보기">가이드 보기<span aria-hidden="true">↗</span></a>
           </div></article></div>
       <div class="library-empty" hidden><span aria-hidden="true">⌕</span><h3>조건에 맞는 자료가 없습니다.</h3><p>다른 검색어를 입력하거나 분류·주제 조건을 바꿔보세요.</p><button type="button" data-reset>전체 자료 보기</button></div>
       <noscript><p class="library-noscript">모든 자료를 표시하고 있습니다. 검색과 필터는 JavaScript를 켜면 사용할 수 있습니다.</p></noscript>
